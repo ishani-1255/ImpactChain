@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 const nav = [
-    { name: 'Home' ,href: '/Home'},
+    {name: 'Home' ,href: '/Home'},
     {name: 'Donate' , href: '/Donate'},
     {name: 'Explore' , href: '/Explore'},
 ]
@@ -9,7 +9,7 @@ function Header(props){
         <>
     <div className="flex justify-end bg-white-800 h-16">
                     {nav.map((item) => (
-                      < NavLink
+                      <NavLink
                         key={item.name}
                         to={item.href}
                        
@@ -26,9 +26,9 @@ function Header(props){
                       </NavLink>
                     ))}
                   </div>
-                  <div className ="bg-gray-300 min-h-screen">
+                  
                   {props.children}
-                  </div>
+         
                   </>
     );
 
